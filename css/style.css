@@ -1,0 +1,234 @@
+/*
+    Author: Jake Schramm
+    Theme: Coffee Shop Website;
+    version: 1.0
+*/
+
+*{
+    margin: 0 0;
+    padding: 0 0; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.logo {
+    width: 10%;
+    float: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+.menu ul li {
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+.menu {
+    line-height: 60px; 
+ 
+}
+
+a{
+    color: #AB6556;
+    text-decoration: none; /* remove underline from link */
+}
+a:hover {
+    color: #865044;
+}
+
+/* CSS for coffee search section */
+
+.food-search {
+    background-image: url("../images/banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0; 
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.food-search input[type="search"] {
+    width: 50%; /* makes the search bar take up more width */
+    padding: 1%;
+    font-size: 1rem;
+    
+}
+
+.btn {
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #AB6556;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.btn-primary:hover {
+    background-color: #865044;
+}
+
+/* CSS for Categories section */
+
+h2 {
+    color: #57606f;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+.categories {
+    padding: 4% 0;
+}
+
+.box-3 {
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+.float-container {
+    position: relative; /* position will be another position, can be moved left or right */
+}
+
+.float-text {
+    position: absolute;
+    bottom: 50px;
+    left: 40%; /* 40% from left boundary of nearest positioned ancestor (which is float-container) */
+}
+
+.img-curve {
+    border-radius: 10px;
+}
+
+.text-white {
+    color: white;
+}
+
+/* CSS for Explore Coffees section (Coffee Menu) */
+
+.food-menu {
+    background-color: #b8bc86;
+}
+.food-menu-box {
+    width: 43%;
+    margin: 1%; /* on all sides */
+    float: left; /* will need clearfix at bottom */
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-image {
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+.food-price {
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.food-detail {
+    font-size: 1rem;
+    color:#b8bc86;
+}
+
+/* CSS for Social */
+.social ul {
+    list-style-type: none;
+}
+
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+
+
+/* for mobile size on smaller screen */
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul {
+        text-align: center;
+    }
+
+    .food-search input[type="search"] {
+        width: 90%;
+        padding: 1%;
+        margin-bottom: 5%;
+    }
+ 
+    .btn {
+        width: 91%;
+        padding: 2%;
+    }
+
+    
+    .box-3 {
+        width: 90%;
+        margin: 4% auto;
+    }
+
+    .food-search {
+        padding: 10% 0;
+    }
+
+    .categories {
+        padding: 20% 0;
+    }
+
+    h2 {
+        margin-bottom: 10% auto;
+    }
+
+    .food-menu {
+        padding: 20% 0;
+    }
+
+    .food-menu-box {
+        width: 95%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .social {
+        padding: 5% 0;
+    }
+}
